@@ -1,0 +1,13 @@
+proxies:
+  {{ getClashNodes() }}
+
+rule-providers:
+  clashruleflow-proxy:
+    type: http
+    url: https://raw.githubusercontent.com/leonli712/ClashRuleFlow/main/rules/proxy.yaml
+    interval: 86400
+
+rules:
+  - RULE-SET,clashruleflow-proxy,Proxy
+  - GEOIP,CN,DIRECT
+  - MATCH,Proxy

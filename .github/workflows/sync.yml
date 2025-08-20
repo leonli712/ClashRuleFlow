@@ -1,0 +1,26 @@
+name: Sync Rules
+on:
+  schedule:
+    - cron: '0 3 * * *'  # 每天UTC时间3点自动运行
+  workflow_dispatch:     # 允许手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 示例：从ACL4SSR更新规则（可替换为你的源）
+      - name: Update Proxy Rules
+        run: |
+          curl -sL "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Proxy.list" | 
+            sed 's/^/  - /;1i payload:' > rules/proxy.yaml
+
+      # 提交变更
+      - name: Commit Changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add rules/
+          git commit -m "Auto-update: $(date +'%Y-%m-%d')" || echo "No changes"
+          git push

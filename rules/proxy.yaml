@@ -1,0 +1,7 @@
+payload:
+  # 国际服务
+  - DOMAIN-SUFFIX,google.com,Proxy
+  - DOMAIN-SUFFIX,github.com,Proxy
+  # 流媒体
+  - DOMAIN-KEYWORD,netflix,Proxy
+  - IP-CIDR,8.8.8.8/32,Proxy
