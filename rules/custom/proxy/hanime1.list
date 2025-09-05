@@ -1,25 +1,29 @@
-# hanime1.me Ö÷Õ¾¼°ºËĞÄÓòÃû
+# NAME: hanime1
+# AUTHOR: leonli712
+# REPO: https://github.com/leonli712/ClashRuleFlow
+# UPDATED: 2025-09-05 23:11
+# hanime1.me ä¸»ç«™åŠæ ¸å¿ƒåŸŸå
 DOMAIN-SUFFIX,hanime1.me
 DOMAIN-SUFFIX,hanime.tv
 DOMAIN-SUFFIX,hanime1.tv
 
-# ÊÓÆµÁ÷Ã½ÌåÏà¹Ø
+# è§†é¢‘æµåª’ä½“ç›¸å…³
 DOMAIN-SUFFIX,hanimecdn.com
 DOMAIN-SUFFIX,hani-cdn.net
 DOMAIN-SUFFIX,hanime-vod.b-cdn.net
 
-# ¾²Ì¬×ÊÔ´ÓëÍ¼Æ¬
+# é™æ€èµ„æºä¸å›¾ç‰‡
 DOMAIN-SUFFIX,hanimeimg.com
 DOMAIN-SUFFIX,hanimepic.com
 
-# ÓÃ»§ÈÏÖ¤ÓëAPI
+# ç”¨æˆ·è®¤è¯ä¸API
 DOMAIN-SUFFIX,hanimeapi.com
 DOMAIN-SUFFIX,hanimeauth.com
 
-# ¹ã¸æÓëÍ³¼Æ£¨¿ÉÑ¡ÆÁ±Î£©
+# å¹¿å‘Šä¸ç»Ÿè®¡ï¼ˆå¯é€‰å±è”½ï¼‰
 DOMAIN-SUFFIX,hanimead.com
 DOMAIN-SUFFIX,hanimestats.com
 
-# ±¸ÓÃÓòÃû£¨·ÀÖ¹Ö÷Õ¾Ê§Ğ§£©
+# å¤‡ç”¨åŸŸåï¼ˆé˜²æ­¢ä¸»ç«™å¤±æ•ˆï¼‰
 DOMAIN-SUFFIX,hanime2.me
 DOMAIN-SUFFIX,hanime3.me
