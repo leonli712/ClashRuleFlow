@@ -1,0 +1,52 @@
+payload:
+  # 流媒体服务
+  - DOMAIN-SUFFIX,netflix.com,Proxy
+  - DOMAIN-SUFFIX,nflxext.com,Proxy
+  - DOMAIN-SUFFIX,nflximg.com,Proxy
+  - DOMAIN-SUFFIX,nflxso.net,Proxy
+  - DOMAIN-SUFFIX,nflxvideo.net,Proxy
+
+  # 社交平台
+  - DOMAIN-SUFFIX,facebook.com,Proxy
+  - DOMAIN-SUFFIX,fb.com,Proxy
+  - DOMAIN-SUFFIX,instagram.com,Proxy
+  - DOMAIN-SUFFIX,whatsapp.com,Proxy
+
+  # 云存储
+  - DOMAIN-SUFFIX,dropbox.com,Proxy
+  - DOMAIN-SUFFIX,dropboxapi.com,Proxy
+  - DOMAIN-SUFFIX,dropboxstatic.com,Proxy
+
+  # 学术资源
+  - DOMAIN-SUFFIX,sci-hub.se,Proxy
+  - DOMAIN-SUFFIX,sci-hub.tw,Proxy
+
+  # 其他常用服务
+  - DOMAIN-SUFFIX,reddit.com,Proxy
+  - DOMAIN-SUFFIX,quora.com,Proxy
+  - DOMAIN-SUFFIX,medium.com,Proxy
+  - DOMAIN-SUFFIX,imgur.com,Proxy
+
+  # CDN和基础设施
+  - DOMAIN-SUFFIX,fastly.net,Proxy
+  - DOMAIN-SUFFIX,cloudfront.net,Proxy
+  - DOMAIN-SUFFIX,akamaihd.net,Proxy
+
+  # 开发者工具
+  - DOMAIN-SUFFIX,gitlab.com,Proxy
+  - DOMAIN-SUFFIX,docker.com,Proxy
+  - DOMAIN-SUFFIX,npmjs.com,Proxy
+
+   # Unity 相关（避免跳转中国版）
+  - DOMAIN-SUFFIX,unity.com,Proxy
+  - DOMAIN-SUFFIX,unity3d.com,Proxy
+  - DOMAIN-SUFFIX,unity.cn,Proxy
+  - DOMAIN-SUFFIX,unityads.com,Proxy
+  - DOMAIN-SUFFIX,unitycloud.com,Proxy
+
+   # Unity 相关（避免跳转中国版）
+  - DOMAIN-SUFFIX,unity.com,Proxy
+  - DOMAIN-SUFFIX,unity3d.com,Proxy
+  - DOMAIN-SUFFIX,unity.cn,Proxy
+  - DOMAIN-SUFFIX,unityads.com,Proxy
+  - DOMAIN-SUFFIX,unitycloud.com,Proxy

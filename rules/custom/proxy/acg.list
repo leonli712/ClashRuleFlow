@@ -1,0 +1,9 @@
+# 必须代理的番剧资源站
+DOMAIN-SUFFIX,mikanani.me
+DOMAIN-SUFFIX,dmhy.org
+DOMAIN-SUFFIX,share.dmhy.org
+
+# 国际番剧资源站（需代理）
+DOMAIN-SUFFIX,nyaa.si
+DOMAIN-SUFFIX,anidex.info
+DOMAIN-SUFFIX,tokyotosho.info

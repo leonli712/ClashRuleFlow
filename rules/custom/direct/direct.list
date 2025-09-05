@@ -1,0 +1,23 @@
+#DDNS服务
+DOMAIN-SUFFIX,leoneva.fun
+
+# 国内核心服务（精简版）
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,aliyun.com
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,163.com
+
+# 追觅服务（不走代理）
+DOMAIN-SUFFIX,dreame.com
+DOMAIN-SUFFIX,dreametech.com
+DOMAIN-SUFFIX,dreamehome.com
+DOMAIN-SUFFIX,dreamecloud.com
+
+# 局域网和国内IP段
+IP-CIDR,192.168.0.0/16
+IP-CIDR,10.0.0.0/8
+IP-CIDR,172.16.0.0/12
+GEOIP,CN

@@ -1,0 +1,67 @@
+# 流媒体服务
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,nflxext.com
+DOMAIN-SUFFIX,nflximg.com
+DOMAIN-SUFFIX,nflxso.net
+DOMAIN-SUFFIX,nflxvideo.net
+
+# 社交平台
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,whatsapp.com
+
+# 云存储
+DOMAIN-SUFFIX,dropbox.com
+DOMAIN-SUFFIX,dropboxapi.com
+DOMAIN-SUFFIX,dropboxstatic.com
+
+# 学术资源
+DOMAIN-SUFFIX,sci-hub.se
+DOMAIN-SUFFIX,sci-hub.tw
+
+# 其他常用服务
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,quora.com
+DOMAIN-SUFFIX,medium.com
+DOMAIN-SUFFIX,imgur.com
+
+# CDN和基础设施
+DOMAIN-SUFFIX,fastly.net
+DOMAIN-SUFFIX,cloudfront.net
+DOMAIN-SUFFIX,akamaihd.net
+
+# 开发者工具
+DOMAIN-SUFFIX,gitlab.com
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,npmjs.com
+
+# Unity 相关（避免跳转中国版）
+DOMAIN-SUFFIX,unity.com
+DOMAIN-SUFFIX,unity3d.com
+DOMAIN-SUFFIX,unity.cn
+DOMAIN-SUFFIX,unityads.com
+DOMAIN-SUFFIX,unitycloud.com
+
+# tinyMediaManager 刮削器（影视信息）
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,thetvdb.com
+DOMAIN-SUFFIX,imdb.com
+DOMAIN-SUFFIX,omdbapi.com
+DOMAIN-SUFFIX,trakt.tv
+DOMAIN-SUFFIX,moviemeter.nl
+DOMAIN-SUFFIX,ofdb.de
+DOMAIN-SUFFIX,animedb.net
+DOMAIN-SUFFIX,anidb.net
+DOMAIN-SUFFIX,mpdb.tv
+
+# Emby 字幕服务
+DOMAIN-SUFFIX,opensubtitles.org
+DOMAIN-SUFFIX,opensubtitles.com
+DOMAIN-SUFFIX,meiamdub.shoote.com
+DOMAIN-SUFFIX,meiamdub.sthunder.com
+DOMAIN-SUFFIX,subscene.com
+DOMAIN-SUFFIX,yifysubtitles.com
+DOMAIN-SUFFIX,subhd.tv
+DOMAIN-SUFFIX,zimuku.org
+DOMAIN-SUFFIX,rarbg.to

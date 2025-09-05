@@ -1,9 +1,9 @@
-# å†…å®¹ï¼šOpenAi Bard anthropic
-# åŸŸåå…³é”®å­—åŒ¹é…
+# ÄÚÈİ£ºOpenAi Bard anthropic
+# ÓòÃû¹Ø¼ü×ÖÆ¥Åä
 # DOMAIN-KEYWORD,openai
 # DOMAIN-KEYWORD,anthropic
 # DOMAIN-KEYWORD,Claude
-# åŸŸååç¼€åŒ¹é…
+# ÓòÃûºó×ºÆ¥Åä
 DOMAIN,copilot.microsoft.com
 DOMAIN-SUFFIX,bing.com
 
@@ -43,3 +43,7 @@ DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,googleapis.cn
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,signalr.net
+
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,metademolab.com
+DOMAIN-SUFFIX,perplexity.ai

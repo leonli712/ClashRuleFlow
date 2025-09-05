@@ -1,0 +1,24 @@
+payload:
+  # DDNS服务
+  - DOMAIN-SUFFIX,leoneva.fun,DIRECT
+
+  # 国内核心服务（仅保留高优先级域名，避免规则膨胀）
+  - DOMAIN-SUFFIX,baidu.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,aliyun.com,DIRECT
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,weibo.com,DIRECT
+  - DOMAIN-SUFFIX,163.com,DIRECT
+
+  # 追觅服务（专用域名，确保直连）
+  - DOMAIN-SUFFIX,dreame.com,DIRECT
+  - DOMAIN-SUFFIX,dreametech.com,DIRECT
+  - DOMAIN-SUFFIX,dreamehome.com,DIRECT
+  - DOMAIN-SUFFIX,dreamecloud.com,DIRECT
+
+  # 局域网和国内IP（精简IP段，依赖GEOIP优先级）
+  - IP-CIDR,192.168.0.0/16,DIRECT  # 家庭局域网
+  - IP-CIDR,10.0.0.0/8,DIRECT      # 企业局域网
+  - IP-CIDR,172.16.0.0/12,DIRECT   # 局域网补充
+  - GEOIP,CN,DIRECT                # 国内IP直连（覆盖99%国内流量）

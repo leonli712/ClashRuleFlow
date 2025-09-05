@@ -1,0 +1,25 @@
+# hanime1.me 主站及核心域名
+DOMAIN-SUFFIX,hanime1.me
+DOMAIN-SUFFIX,hanime.tv
+DOMAIN-SUFFIX,hanime1.tv
+
+# 视频流媒体相关
+DOMAIN-SUFFIX,hanimecdn.com
+DOMAIN-SUFFIX,hani-cdn.net
+DOMAIN-SUFFIX,hanime-vod.b-cdn.net
+
+# 静态资源与图片
+DOMAIN-SUFFIX,hanimeimg.com
+DOMAIN-SUFFIX,hanimepic.com
+
+# 用户认证与API
+DOMAIN-SUFFIX,hanimeapi.com
+DOMAIN-SUFFIX,hanimeauth.com
+
+# 广告与统计（可选屏蔽）
+DOMAIN-SUFFIX,hanimead.com
+DOMAIN-SUFFIX,hanimestats.com
+
+# 备用域名（防止主站失效）
+DOMAIN-SUFFIX,hanime2.me
+DOMAIN-SUFFIX,hanime3.me

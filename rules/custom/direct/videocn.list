@@ -1,0 +1,36 @@
+# 国内主流视频平台
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,bilivideo.com
+DOMAIN-SUFFIX,acg.tv
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,qiyi.com
+DOMAIN-SUFFIX,youku.com
+DOMAIN-SUFFIX,tudou.com
+DOMAIN-SUFFIX,sohu.com
+DOMAIN-SUFFIX,le.com
+DOMAIN-SUFFIX,letv.com
+DOMAIN-SUFFIX,pptv.com
+DOMAIN-SUFFIX,mgtv.com
+DOMAIN-SUFFIX,wasu.cn
+DOMAIN-SUFFIX,fun.tv
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,huya.com
+DOMAIN-SUFFIX,douyu.com
+DOMAIN-SUFFIX,yy.com
+DOMAIN-SUFFIX,kuaishou.com
+DOMAIN-SUFFIX,acfun.cn
+
+# CDN及附属服务
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,biligame.com
+DOMAIN-SUFFIX,bilibiligame.net
+DOMAIN-SUFFIX,iqiyipic.com
+DOMAIN-SUFFIX,qiyipic.com
+DOMAIN-SUFFIX,youkupt.com
+DOMAIN-SUFFIX,ykimg.com
+DOMAIN-SUFFIX,lecloud.com
+DOMAIN-SUFFIX,letvcloud.com
+DOMAIN-SUFFIX,funshion.com
+DOMAIN-SUFFIX,pps.tv
