@@ -1,26 +1,24 @@
-# steamdownload.yaml£¨½ö¿ØÖÆÏÂÔØÁ÷Á¿Ö±Á¬£¬²»Ó°ÏìÆäËûSteam·şÎñ£©
+# steamdownload.yaml
 payload:
   # --------------------------
-  # Steam ¹úÄÚÏÂÔØ½Úµã£¨Ö±Á¬£©
+  # Steam å›½å†…ä¸‹è½½èŠ‚ç‚¹ï¼ˆç›´è¿ï¼‰
   # --------------------------
-  # ¹úÄÚCDNÓòÃû£¨ÏÂÔØËÙ¶È¿ì£¬ÎŞĞè´úÀí£©
+  # å›½å†…CDNåŸŸå
   - DOMAIN-SUFFIX,cdn-ali.content.steamchina.com
   - DOMAIN-SUFFIX,cdn-qc.content.steamchina.com
   - DOMAIN-SUFFIX,cdn-ws.content.steamchina.com
-  - DOMAIN-SUFFIX,dl.steam.clngaa.com  # ¹úÄÚ½Úµã
-  - DOMAIN-SUFFIX,dl.steam.ksyna.com   # ¹úÄÚ½Úµã
-  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com  # °¢ÀïÔÆCDN
+  - DOMAIN-SUFFIX,dl.steam.clngaa.com
+  - DOMAIN-SUFFIX,dl.steam.ksyna.com
+  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com
   
-  # ÏÂÔØ×¨ÓÃÓòÃû£¨¹ú¼ÊCDN£¬µ«¹úÄÚÖ±Á¬ËÙ¶È¿ì£©
+  # ä¸‹è½½ä¸“ç”¨åŸŸå
   - DOMAIN-SUFFIX,steampipe.akamaized.net
   - DOMAIN-SUFFIX,steampipe-partner.akamaized.net
   - DOMAIN-SUFFIX,st.dl.bscstorage.net
   - DOMAIN-SUFFIX,st.dl.eccdnx.com
 
   # --------------------------
-  # ÏÂÔØÏà¹ØIP¶Î£¨¿ÉÑ¡£¬½øÒ»²½Ëø¶¨ÏÂÔØÁ÷Á¿£©
-  # --------------------------
-  # ¹úÄÚSteamÏÂÔØ·şÎñÆ÷IP¶Î£¨Í¨¹ı×¥°ü»ñÈ¡£¬Ê¾Àı£©
+  # å›½å†…Steamä¸‹è½½æœåŠ¡å™¨IPæ®µ
   - IP-CIDR,103.2.28.0/22
   - IP-CIDR,110.76.140.0/22
   - IP-CIDR,119.235.224.0/21
