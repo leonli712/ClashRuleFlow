@@ -1,3 +1,10 @@
-# 番剧下载
+# ACG Download Rules
+# Description: Block ACG download domains
+# Author: Your Name
+# Updated: 2025-09-06
+# Rules Count: 2
+# 
+# DOMAIN-SUFFIX: 2
+# TOTAL: 2
 DOMAIN-SUFFIX,acgnx.net
 DOMAIN-SUFFIX,share.acgnx.net
