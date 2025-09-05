@@ -1,9 +1,13 @@
-# ฑุะ๋ด๚ภํตฤทฌพ็ืสิดีพ
+# NAME: acg
+# AUTHOR: leonli712
+# REPO: https://github.com/leonli712/ClashRuleFlow
+# UPDATED: 2025-09-05 23:11
+# ๅฟ…้กปไปฃ็็็•ชๅง่ตๆบ็ซ
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,dmhy.org
 DOMAIN-SUFFIX,share.dmhy.org
 
-# น๚ผสทฌพ็ืสิดีพฃจะ่ด๚ภํฃฉ
+# ๅฝ้…็•ชๅง่ตๆบ็ซ๏ผ้€ไปฃ็๏ผ
 DOMAIN-SUFFIX,nyaa.si
 DOMAIN-SUFFIX,anidex.info
 DOMAIN-SUFFIX,tokyotosho.info
