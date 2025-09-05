@@ -1,5 +1,5 @@
 payload:
-  # ===== ÓòÃû¹Ø¼ü×ÖÆ¥Åä£¨AI Ïà¹Ø·şÎñ£© =====
+  # ===== åŸŸåå…³é”®å­—åŒ¹é… =====
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,anthropic
   - DOMAIN-KEYWORD,claude
@@ -7,14 +7,14 @@ payload:
   - DOMAIN-KEYWORD,grok
   - DOMAIN-KEYWORD,gemini
 
-  # ===== ÓòÃû¾«È·Æ¥Åä =====
+  # ===== åŸŸåç²¾ç¡®åŒ¹é… =====
   - DOMAIN,copilot.microsoft.com
   - DOMAIN,bard.google.com
   - DOMAIN,claude.ai
   - DOMAIN,meta.ai
   - DOMAIN,x.ai
 
-  # ===== ÓòÃûºó×ºÆ¥Åä£¨AI ºËĞÄ·şÎñ£© =====
+  # ===== åŸŸååç¼€åŒ¹é… =====
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,oaistatic.com
   - DOMAIN-SUFFIX,oaiusercontent.com
@@ -26,19 +26,19 @@ payload:
   - DOMAIN-SUFFIX,difyai.com
   - DOMAIN-SUFFIX,genspark.ai
 
-  # ===== ÓòÃûºó×ºÆ¥Åä£¨ÒÀÀµ·şÎñ£© =====
-  - DOMAIN-SUFFIX,bing.com          # Copilot ÒÀÀµ
-  - DOMAIN-SUFFIX,googleapis.com    # Google AI ÒÀÀµ
+  # ===== åŸŸååç¼€åŒ¹é… =====
+  - DOMAIN-SUFFIX,bing.com          # Copilot
+  - DOMAIN-SUFFIX,googleapis.com    # Google AI
   - DOMAIN-SUFFIX,googleapis.cn
   - DOMAIN-SUFFIX,gstatic.com
-  - DOMAIN-SUFFIX,intercom.io       # OpenAI ¿Í·şÏµÍ³
+  - DOMAIN-SUFFIX,intercom.io       # OpenAI
   - DOMAIN-SUFFIX,intercomcdn.com
-  - DOMAIN-SUFFIX,stripe.com        # Ö§¸¶ÒÀÀµ
-  - DOMAIN-SUFFIX,sentry.io         # ´íÎó¼à¿Ø
-  - DOMAIN-SUFFIX,auth0.com         # Éí·İÑéÖ¤
-  - DOMAIN-SUFFIX,signalr.net       # ÊµÊ±Í¨ĞÅ
+  - DOMAIN-SUFFIX,stripe.com
+  - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN-SUFFIX,auth0.com Ö¤
+  - DOMAIN-SUFFIX,signalr.net
 
-  # ===== Ğ¡ÖÚÓòÃû£¨¿ÉÑ¡£© =====
+  # ===== å°ä¼—åŸŸå =====
   - DOMAIN-SUFFIX,circumlunar.space
   - DOMAIN-SUFFIX,vulpes.one
   - DOMAIN-SUFFIX,mozz.us
