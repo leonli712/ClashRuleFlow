@@ -1,9 +1,13 @@
-# ÄÚÈİ£ºOpenAi Bard anthropic
-# ÓòÃû¹Ø¼ü×ÖÆ¥Åä
+# NAME: AI
+# AUTHOR: leonli712
+# REPO: https://github.com/leonli712/ClashRuleFlow
+# UPDATED: 2025-09-05 23:11
+# å†…å®¹ï¼šOpenAi Bard anthropic
+# åŸŸåå…³é”®å­—åŒ¹é…
 # DOMAIN-KEYWORD,openai
 # DOMAIN-KEYWORD,anthropic
 # DOMAIN-KEYWORD,Claude
-# ÓòÃûºó×ºÆ¥Åä
+# åŸŸååç¼€åŒ¹é…
 DOMAIN,copilot.microsoft.com
 DOMAIN-SUFFIX,bing.com
 
