@@ -1,4 +1,8 @@
-# ¹úÄÚÖ÷Á÷ÊÓÆµÆ½Ì¨
+# NAME: videocn
+# AUTHOR: leonli712
+# REPO: https://github.com/leonli712/ClashRuleFlow
+# UPDATED: 2025-09-05 23:11
+# å›½å†…ä¸»æµè§†é¢‘å¹³å°
 DOMAIN-SUFFIX,bilibili.com
 DOMAIN-SUFFIX,bilivideo.com
 DOMAIN-SUFFIX,acg.tv
@@ -22,7 +26,7 @@ DOMAIN-SUFFIX,yy.com
 DOMAIN-SUFFIX,kuaishou.com
 DOMAIN-SUFFIX,acfun.cn
 
-# CDN¼°¸½Êô·şÎñ
+# CDNåŠé™„å±æœåŠ¡
 DOMAIN-SUFFIX,biliapi.net
 DOMAIN-SUFFIX,biligame.com
 DOMAIN-SUFFIX,bilibiligame.net
