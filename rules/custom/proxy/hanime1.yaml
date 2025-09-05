@@ -1,26 +1,26 @@
 payload:
-  # ===== Ö÷Õ¾¼°ºËĞÄÓòÃû =====
+  # ===== ä¸»ç«™åŠæ ¸å¿ƒåŸŸå =====
   - DOMAIN-SUFFIX,hanime1.me
   - DOMAIN-SUFFIX,hanime.tv
   - DOMAIN-SUFFIX,hanime1.tv
 
-  # ===== ÊÓÆµÁ÷Ã½Ìå =====
+  # ===== è§†é¢‘æµåª’ä½“ =====
   - DOMAIN-SUFFIX,hanimecdn.com
   - DOMAIN-SUFFIX,hani-cdn.net
   - DOMAIN-SUFFIX,hanime-vod.b-cdn.net
 
-  # ===== ¾²Ì¬×ÊÔ´ =====
+  # ===== é™æ€èµ„æº =====
   - DOMAIN-SUFFIX,hanimeimg.com
   - DOMAIN-SUFFIX,hanimepic.com
 
-  # ===== ÓÃ»§ÈÏÖ¤ =====
+  # ===== ç”¨æˆ·è®¤è¯ =====
   - DOMAIN-SUFFIX,hanimeapi.com
   - DOMAIN-SUFFIX,hanimeauth.com
 
-  # ===== ¹ã¸æÓëÍ³¼Æ£¨¿ÉÑ¡£© =====
-  - DOMAIN-SUFFIX,hanimead.com,REJECT  # ÆÁ±Î¹ã¸æ
+  # ===== å¹¿å‘Šä¸ç»Ÿè®¡ =====
+  - DOMAIN-SUFFIX,hanimead.com,REJECT  # å±è”½å¹¿å‘Š
   - DOMAIN-SUFFIX,hanimestats.com,REJECT
 
-  # ===== ±¸ÓÃÓòÃû =====
+  # ===== å¤‡ç”¨åŸŸå =====
   - DOMAIN-SUFFIX,hanime2.me
   - DOMAIN-SUFFIX,hanime3.me
