@@ -1,0 +1,579 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: true
+mode: rule
+log-level: silent
+external-controller: 0.0.0.0:9090
+secret: ""  # 如需Web管理，填写密码
+
+# DNS配置（防污染）
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  default-nameserver:
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    - '*.lan'
+    - 'localhost.'
+  nameserver:
+    - https://dns.alidns.com/dns-query  # 国内DNS
+    - https://8.8.8.8/dns-query         # 国外DNS（防污染）
+
+proxy-groups:
+  # --------------------------
+  # 1. 场景化策略组（你的16个自定义组）
+  # --------------------------
+  - name: 国内直连
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  - name: 海外流量
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  - name: 海外信息
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  - name: Linkedin
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  - name: GitHub
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  - name: Bahamut
+    type: select
+    proxies:
+      - DIRECT
+      - 台湾-自动
+
+  - name: hanime1
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  - name: Spotify
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  - name: Steam
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  - name: Steam下载
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  - name: 海外游戏
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  - name: AI
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  - name: Apple
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  - name: Microsoft
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  - name: 漏网之鱼
+    type: select
+    proxies:
+      - DIRECT
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+  
+  # --------------------------
+  # 2. 手动选择与故障转移
+  # --------------------------
+  - name: 手动选择
+    type: select
+    proxies: []  # 订阅转换后自动填充所有节点
+
+  - name: 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 手动选择
+      - 所有-自动
+      - 港台日新韩-自动
+      - 台日新韩-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 其他-自动
+      - Kuromis
+      - TAG
+      - BoostNet
+      - 牛逼
+
+  # --------------------------
+  # 3. 地区自动分组（含Emoji/多关键词）
+  # --------------------------
+  - name: 所有-自动
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use: []  # 自动匹配所有节点
+
+  - name: 港台日新韩-自动
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      # 香港
+      - 广港
+      - HK
+      - 香港
+      - "🇭🇰"
+      # 台湾
+      - 广台
+      - TW
+      - 台湾
+      - "🇹🇼"
+      # 日本
+      - 广日
+      - JP
+      - 日本
+      - 东京
+      - "🇯🇵"
+      # 新加坡
+      - 广新
+      - SG
+      - 新加坡
+      - 狮城
+      - "🇸🇬"
+      # 韩国
+      - 广韩
+      - KR
+      - 韩国
+      - 首尔
+      - "🇰🇷"
+
+  - name: 美国-自动
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - 广美
+      - US
+      - 美国
+      - 纽约
+      - 硅谷
+      - "🇺🇸"
+
+  - name: 其他地区-自动
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - DE
+      - FR
+      - UK
+      - 德国
+      - 英国
+      - 澳大利亚
+      - "🇩🇪"
+      - "🇬🇧"
+
+  # --------------------------
+  # 4. 机场分组（按订阅顺序GROUPID）
+  # --------------------------
+  - name: Kuromis
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use: ["!!GROUPID=0"]  # 第1个订阅链接
+
+  - name: TAG
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use: ["!!GROUPID=1"]  # 第2个订阅链接
+
+  - name: BoostNet
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use: ["!!GROUPID=2"]  # 第3个订阅链接
+
+  - name: 牛逼
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use: ["!!GROUPID=3"]  # 第4个订阅链接
+
+# --------------------------
+# 规则集引用（你的自定义+上游规则）
+# --------------------------
+rule-providers:
+  # 1. 自定义直连规则（国内服务/DDNS/追觅）
+  custom-direct:
+    type: file
+    path: custom_direct
+
+  custom-acgcn:
+    type: file
+    path: acgcn
+
+  custom-videocn:
+    type: file
+    path: videocn
+
+  steamdownload:
+    type: file
+    path: steamdownload
+
+  # 2. 自定义代理规则（Unity/刮削器/字幕）
+  custom-proxy:
+    type: file
+    path: custom_proxy
+
+  custom-1:
+    type: file
+    path: custom_1
+
+  custom-acg:
+    type: file
+    path: acg
+
+  custom-AI:
+    type: file
+    path: AI
+
+  custom-hanime1:
+    type: file
+    path: hanime1
+
+  # 3. 上游规则（Steam/Apple等）
+  apple:
+    type: file
+    path: Apple
+  bahamut:
+    type: file
+    path: Bahamut
+  github:
+    type: file
+    path: GitHub
+  global:
+    type: file
+    path: Global
+  linkedin:
+    type: file
+    path: LinkedIn
+  microsoft:
+    type: file
+    path: Microsoft
+  origin:
+    type: file
+    path: Origin
+  spotify:
+    type: file
+    path: Spotify
+  steam:
+    type: file
+    path: Steam
+  telegram:
+    type: file
+    path: Telegram
+  tiktok:
+    type: file
+    path: TikTok
+  twitter:
+    type: file
+    path: Twitter
+  youtube:
+    type: file
+    path: YouTube
+  # No-Resolve规则
+  github-no-resolve:
+    type: file
+    path: GitHub_No_Resolve
+  global-no-resolve:
+    type: file
+    path: Global_No_Resolve
+  steam-no-resolve:
+    type: file
+    path: Steam_No_Resolve
+  telegram-no-resolve:
+    type: file
+    path: Telegram_No_Resolve
+  twitter-no-resolve:
+    type: file
+    path: Twitter_No_Resolve
+
+# --------------------------
+# 规则匹配顺序（按优先级）
+# --------------------------
+rules:
+# 0. 特殊优先规则（最高优先级）
+  - RULE-SET,linkedin,Linkedin
+
+# 1. 本地直连规则（次高优先级）
+  - RULE-SET,custom-direct,DIRECT
+  - RULE-SET,custom-acgcn,国内直连
+  - RULE-SET,custom-videocn,国内直连
+  - RULE-SET,steamdownload,Steam下载
+  - RULE-SET,custom-proxy,海外流量
+  - RULE-SET,custom-1,海外流量
+  - RULE-SET,custom-acg,海外流量
+  - RULE-SET,custom-AI,AI
+  - RULE-SET,custom-hanime1,hanime1
+
+  # 2. 场景化策略组（按需绑定规则集）
+  - RULE-SET,steam,Steam
+  #- RULE-SET,steam-no-resolve,Steam
+  - RULE-SET,telegram,海外信息
+  #- RULE-SET,telegram-no-resolve,海外信息
+  - RULE-SET,twitter,海外信息
+  #- RULE-SET,twitter-no-resolve,海外信息
+  - RULE-SET,gitHub,GitHub
+  #- RULE-SET,github-no-resolve,GitHub
+  - RULE-SET,bahamut,Bahamut
+  - RULE-SET,spotify,Spotify
+  - RULE-SET,origin,海外游戏
+  - RULE-SET,youtube,海外流量
+  - RULE-SET,tiktok,海外流量
+  - RULE-SET,apple,Apple
+  - RULE-SET,microsoft,Microsoft
+  - RULE-SET,global,海外流量
+  #- RULE-SET,global-no-resolve,海外流量
+
+  # 3. 自定义代理规则（Unity/刮削器等）
+
+  # 4. 上游规则（补充遗漏）
+
+  # 5. 兜底规则
+  - MATCH,漏网之鱼
