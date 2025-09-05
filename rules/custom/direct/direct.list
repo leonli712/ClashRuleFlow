@@ -1,10 +1,11 @@
-# ==============================================================================
-# File: direct.list
-# Description: Direct connection rules for China domestic services and LAN
-# Author: Your Name
-# Updated: 2025-09-06
-# Rule Types: DOMAIN-SUFFIX, IP-CIDR, GEOIP
-# ==============================================================================
+# NAME: direct
+# AUTHOR: leonli712
+# REPO: https://github.com/leonli712/ClashRuleFlow
+# UPDATED: 2025-09-05 23:11
+# DOMAIN-KEYWORD: 0
+# DOMAIN-SUFFIX: 12
+# TOTAL: 16
+
 # DDNS Service (Direct Connection)
 DOMAIN-SUFFIX,leoneva.fun
 
