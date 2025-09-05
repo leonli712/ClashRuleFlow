@@ -1,4 +1,7 @@
-# steamdownload.list（格式：规则类型,值,策略）
+# NAME: steamdownload
+# AUTHOR: leonli712
+# REPO: https://github.com/leonli712/ClashRuleFlow
+# UPDATED: 2025-09-05 23:11
 DOMAIN-SUFFIX,cdn-ali.content.steamchina.com
 DOMAIN-SUFFIX,cdn-qc.content.steamchina.com
 DOMAIN-SUFFIX,cdn-ws.content.steamchina.com
