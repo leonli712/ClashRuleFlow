@@ -1,0 +1,14 @@
+# steamdownload.list（格式：规则类型,值,策略）
+DOMAIN-SUFFIX,cdn-ali.content.steamchina.com,DIRECT
+DOMAIN-SUFFIX,cdn-qc.content.steamchina.com,DIRECT
+DOMAIN-SUFFIX,cdn-ws.content.steamchina.com,DIRECT
+DOMAIN-SUFFIX,dl.steam.clngaa.com,DIRECT
+DOMAIN-SUFFIX,dl.steam.ksyna.com,DIRECT
+DOMAIN-SUFFIX,st.dl.pinyuncloud.com,DIRECT
+DOMAIN-SUFFIX,steampipe.akamaized.net,DIRECT
+DOMAIN-SUFFIX,steampipe-partner.akamaized.net,DIRECT
+DOMAIN-SUFFIX,st.dl.bscstorage.net,DIRECT
+DOMAIN-SUFFIX,st.dl.eccdnx.com,DIRECT
+IP-CIDR,103.2.28.0/22,DIRECT
+IP-CIDR,110.76.140.0/22,DIRECT
+IP-CIDR,119.235.224.0/21,DIRECT

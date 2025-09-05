@@ -1,26 +1,26 @@
 payload:
   # ===== 主站及核心域名 =====
-  - DOMAIN-SUFFIX,hanime1.me,Proxy
-  - DOMAIN-SUFFIX,hanime.tv,Proxy
-  - DOMAIN-SUFFIX,hanime1.tv,Proxy
+  - DOMAIN-SUFFIX,hanime1.me
+  - DOMAIN-SUFFIX,hanime.tv
+  - DOMAIN-SUFFIX,hanime1.tv
 
   # ===== 视频流媒体 =====
-  - DOMAIN-SUFFIX,hanimecdn.com,Proxy
-  - DOMAIN-SUFFIX,hani-cdn.net,Proxy
-  - DOMAIN-SUFFIX,hanime-vod.b-cdn.net,Proxy
+  - DOMAIN-SUFFIX,hanimecdn.com
+  - DOMAIN-SUFFIX,hani-cdn.net
+  - DOMAIN-SUFFIX,hanime-vod.b-cdn.net
 
   # ===== 静态资源 =====
-  - DOMAIN-SUFFIX,hanimeimg.com,Proxy
-  - DOMAIN-SUFFIX,hanimepic.com,Proxy
+  - DOMAIN-SUFFIX,hanimeimg.com
+  - DOMAIN-SUFFIX,hanimepic.com
 
   # ===== 用户认证 =====
-  - DOMAIN-SUFFIX,hanimeapi.com,Proxy
-  - DOMAIN-SUFFIX,hanimeauth.com,Proxy
+  - DOMAIN-SUFFIX,hanimeapi.com
+  - DOMAIN-SUFFIX,hanimeauth.com
 
   # ===== 广告与统计（可选） =====
   - DOMAIN-SUFFIX,hanimead.com,REJECT  # 屏蔽广告
   - DOMAIN-SUFFIX,hanimestats.com,REJECT
 
   # ===== 备用域名 =====
-  - DOMAIN-SUFFIX,hanime2.me,Proxy
-  - DOMAIN-SUFFIX,hanime3.me,Proxy
+  - DOMAIN-SUFFIX,hanime2.me
+  - DOMAIN-SUFFIX,hanime3.me

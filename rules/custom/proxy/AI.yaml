@@ -1,46 +1,46 @@
 payload:
   # ===== 域名关键字匹配（AI 相关服务） =====
-  - DOMAIN-KEYWORD,openai,Proxy
-  - DOMAIN-KEYWORD,anthropic,Proxy
-  - DOMAIN-KEYWORD,claude,Proxy
-  - DOMAIN-KEYWORD,groq,Proxy
-  - DOMAIN-KEYWORD,grok,Proxy
-  - DOMAIN-KEYWORD,gemini,Proxy
+  - DOMAIN-KEYWORD,openai
+  - DOMAIN-KEYWORD,anthropic
+  - DOMAIN-KEYWORD,claude
+  - DOMAIN-KEYWORD,groq
+  - DOMAIN-KEYWORD,grok
+  - DOMAIN-KEYWORD,gemini
 
   # ===== 域名精确匹配 =====
-  - DOMAIN,copilot.microsoft.com,Proxy
-  - DOMAIN,bard.google.com,Proxy
-  - DOMAIN,claude.ai,Proxy
-  - DOMAIN,meta.ai,Proxy
-  - DOMAIN,x.ai,Proxy
+  - DOMAIN,copilot.microsoft.com
+  - DOMAIN,bard.google.com
+  - DOMAIN,claude.ai
+  - DOMAIN,meta.ai
+  - DOMAIN,x.ai
 
   # ===== 域名后缀匹配（AI 核心服务） =====
-  - DOMAIN-SUFFIX,openai.com,Proxy
-  - DOMAIN-SUFFIX,oaistatic.com,Proxy
-  - DOMAIN-SUFFIX,oaiusercontent.com,Proxy
-  - DOMAIN-SUFFIX,anthropic.com,Proxy
-  - DOMAIN-SUFFIX,gemini.google.com,Proxy
-  - DOMAIN-SUFFIX,groq.com,Proxy
-  - DOMAIN-SUFFIX,grok.com,Proxy
-  - DOMAIN-SUFFIX,perplexity.ai,Proxy
-  - DOMAIN-SUFFIX,difyai.com,Proxy
-  - DOMAIN-SUFFIX,genspark.ai,Proxy
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,oaistatic.com
+  - DOMAIN-SUFFIX,oaiusercontent.com
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,groq.com
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,perplexity.ai
+  - DOMAIN-SUFFIX,difyai.com
+  - DOMAIN-SUFFIX,genspark.ai
 
   # ===== 域名后缀匹配（依赖服务） =====
-  - DOMAIN-SUFFIX,bing.com,Proxy          # Copilot 依赖
-  - DOMAIN-SUFFIX,googleapis.com,Proxy    # Google AI 依赖
-  - DOMAIN-SUFFIX,googleapis.cn,Proxy
-  - DOMAIN-SUFFIX,gstatic.com,Proxy
-  - DOMAIN-SUFFIX,intercom.io,Proxy       # OpenAI 客服系统
-  - DOMAIN-SUFFIX,intercomcdn.com,Proxy
-  - DOMAIN-SUFFIX,stripe.com,Proxy        # 支付依赖
-  - DOMAIN-SUFFIX,sentry.io,Proxy         # 错误监控
-  - DOMAIN-SUFFIX,auth0.com,Proxy         # 身份验证
-  - DOMAIN-SUFFIX,signalr.net,Proxy       # 实时通信
+  - DOMAIN-SUFFIX,bing.com          # Copilot 依赖
+  - DOMAIN-SUFFIX,googleapis.com    # Google AI 依赖
+  - DOMAIN-SUFFIX,googleapis.cn
+  - DOMAIN-SUFFIX,gstatic.com
+  - DOMAIN-SUFFIX,intercom.io       # OpenAI 客服系统
+  - DOMAIN-SUFFIX,intercomcdn.com
+  - DOMAIN-SUFFIX,stripe.com        # 支付依赖
+  - DOMAIN-SUFFIX,sentry.io         # 错误监控
+  - DOMAIN-SUFFIX,auth0.com         # 身份验证
+  - DOMAIN-SUFFIX,signalr.net       # 实时通信
 
   # ===== 小众域名（可选） =====
-  - DOMAIN-SUFFIX,circumlunar.space,Proxy
-  - DOMAIN-SUFFIX,vulpes.one,Proxy
-  - DOMAIN-SUFFIX,mozz.us,Proxy
-  - DOMAIN-SUFFIX,conman.org,Proxy
-  - DOMAIN-SUFFIX,bortzmeyer.org,Proxy
+  - DOMAIN-SUFFIX,circumlunar.space
+  - DOMAIN-SUFFIX,vulpes.one
+  - DOMAIN-SUFFIX,mozz.us
+  - DOMAIN-SUFFIX,conman.org
+  - DOMAIN-SUFFIX,bortzmeyer.org

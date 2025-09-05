@@ -1,7 +1,7 @@
 payload:
-  - DOMAIN-SUFFIX,mikanani.me,Proxy
-  - DOMAIN-SUFFIX,dmhy.org,Proxy
-  - DOMAIN-SUFFIX,share.dmhy.org,Proxy
-  - DOMAIN-SUFFIX,nyaa.si,Proxy
-  - DOMAIN-SUFFIX,anidex.info,Proxy
-  - DOMAIN-SUFFIX,tokyotosho.info,Proxy
+  - DOMAIN-SUFFIX,mikanani.me
+  - DOMAIN-SUFFIX,dmhy.org
+  - DOMAIN-SUFFIX,share.dmhy.org
+  - DOMAIN-SUFFIX,nyaa.si
+  - DOMAIN-SUFFIX,anidex.info
+  - DOMAIN-SUFFIX,tokyotosho.info

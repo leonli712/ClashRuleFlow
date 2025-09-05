@@ -1,0 +1,26 @@
+# steamdownload.yaml（仅控制下载流量直连，不影响其他Steam服务）
+payload:
+  # --------------------------
+  # Steam 国内下载节点（直连）
+  # --------------------------
+  # 国内CDN域名（下载速度快，无需代理）
+  - DOMAIN-SUFFIX,cdn-ali.content.steamchina.com
+  - DOMAIN-SUFFIX,cdn-qc.content.steamchina.com
+  - DOMAIN-SUFFIX,cdn-ws.content.steamchina.com
+  - DOMAIN-SUFFIX,dl.steam.clngaa.com  # 国内节点
+  - DOMAIN-SUFFIX,dl.steam.ksyna.com   # 国内节点
+  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com  # 阿里云CDN
+  
+  # 下载专用域名（国际CDN，但国内直连速度快）
+  - DOMAIN-SUFFIX,steampipe.akamaized.net
+  - DOMAIN-SUFFIX,steampipe-partner.akamaized.net
+  - DOMAIN-SUFFIX,st.dl.bscstorage.net
+  - DOMAIN-SUFFIX,st.dl.eccdnx.com
+
+  # --------------------------
+  # 下载相关IP段（可选，进一步锁定下载流量）
+  # --------------------------
+  # 国内Steam下载服务器IP段（通过抓包获取，示例）
+  - IP-CIDR,103.2.28.0/22
+  - IP-CIDR,110.76.140.0/22
+  - IP-CIDR,119.235.224.0/21
