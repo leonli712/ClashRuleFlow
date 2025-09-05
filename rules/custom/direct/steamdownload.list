@@ -1,14 +1,14 @@
-# steamdownload.list£®∏Ò Ω£∫πÊ‘Ú¿‡–Õ,÷µ,≤ﬂ¬‘£©
-DOMAIN-SUFFIX,cdn-ali.content.steamchina.com,DIRECT
-DOMAIN-SUFFIX,cdn-qc.content.steamchina.com,DIRECT
-DOMAIN-SUFFIX,cdn-ws.content.steamchina.com,DIRECT
-DOMAIN-SUFFIX,dl.steam.clngaa.com,DIRECT
-DOMAIN-SUFFIX,dl.steam.ksyna.com,DIRECT
-DOMAIN-SUFFIX,st.dl.pinyuncloud.com,DIRECT
-DOMAIN-SUFFIX,steampipe.akamaized.net,DIRECT
-DOMAIN-SUFFIX,steampipe-partner.akamaized.net,DIRECT
-DOMAIN-SUFFIX,st.dl.bscstorage.net,DIRECT
-DOMAIN-SUFFIX,st.dl.eccdnx.com,DIRECT
-IP-CIDR,103.2.28.0/22,DIRECT
-IP-CIDR,110.76.140.0/22,DIRECT
-IP-CIDR,119.235.224.0/21,DIRECT
+# steamdownload.listÔºàÊ†ºÂºèÔºöËßÑÂàôÁ±ªÂûã,ÂÄº,Á≠ñÁï•Ôºâ
+DOMAIN-SUFFIX,cdn-ali.content.steamchina.com
+DOMAIN-SUFFIX,cdn-qc.content.steamchina.com
+DOMAIN-SUFFIX,cdn-ws.content.steamchina.com
+DOMAIN-SUFFIX,dl.steam.clngaa.com
+DOMAIN-SUFFIX,dl.steam.ksyna.com
+DOMAIN-SUFFIX,st.dl.pinyuncloud.com
+DOMAIN-SUFFIX,steampipe.akamaized.net
+DOMAIN-SUFFIX,steampipe-partner.akamaized.net
+DOMAIN-SUFFIX,st.dl.bscstorage.net
+DOMAIN-SUFFIX,st.dl.eccdnx.com
+IP-CIDR,103.2.28.0/22
+IP-CIDR,110.76.140.0/22
+IP-CIDR,119.235.224.0/21
