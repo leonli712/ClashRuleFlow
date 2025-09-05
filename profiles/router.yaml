@@ -539,7 +539,7 @@ rule-providers:
 # --------------------------
 rules:
 # 0. 特殊优先规则（最高优先级）
-  - RULE-SET,linkedin,LinkedIn
+  - RULE-SET,linkedin,Linkedin
 
 # 1. 本地直连规则（次高优先级）
   - RULE-SET,custom-direct,DIRECT
