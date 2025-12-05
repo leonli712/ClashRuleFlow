@@ -20,8 +20,9 @@ DOMAIN-SUFFIX,tkcdns.com
 DOMAIN-SUFFIX,tktube.com
 
 # Jable.tv
-jable.tv
-mushroomtrack.com
+DOMAIN-SUFFIX,jable.tv
+DOMAIN-SUFFIX,mushroomtrack.com
+DOMAIN-SUFFIX,tapioni.com
 
 
 # Netflav
