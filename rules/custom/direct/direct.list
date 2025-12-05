@@ -4,19 +4,19 @@
 # UPDATED: 2025-09-05 23:11
 # DOMAIN-KEYWORD: 0
 # DOMAIN-SUFFIX: 12
-# TOTAL: 16
+# TOTAL: 17
 
 # DDNS Service (Direct Connection)
 DOMAIN-SUFFIX,leoneva.fun
 
 # China Core Services (Simplified)
-DOMAIN-SUFFIX,baidu.com       # Baidu
-DOMAIN-SUFFIX,qq.com          # Tencent Services
-DOMAIN-SUFFIX,aliyun.com      # Alibaba Cloud
-DOMAIN-SUFFIX,jd.com          # JD.com
-DOMAIN-SUFFIX,taobao.com      # Taobao
-DOMAIN-SUFFIX,weibo.com       # Weibo
-DOMAIN-SUFFIX,163.com         # NetEase
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,aliyun.com
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,163.com
 
 # Dreame Services (Do Not Proxy)
 DOMAIN-SUFFIX,dreame.com      # Dreame Official
@@ -24,8 +24,12 @@ DOMAIN-SUFFIX,dreametech.com  # Dreame Tech
 DOMAIN-SUFFIX,dreamehome.com  # Dreame Home App
 DOMAIN-SUFFIX,dreamecloud.com # Dreame Cloud
 
+# Cheers
+PROCESS-NAME,cheers
+
 # LAN and China IP Ranges
 IP-CIDR,192.168.0.0/16        # Private LAN (192.168.x.x)
 IP-CIDR,10.0.0.0/8            # Private LAN (10.x.x.x)
 IP-CIDR,172.16.0.0/12         # Private LAN (172.16.x.x - 172.31.x.x)
 GEOIP,CN                       # GeoIP: China (Direct Connection)
+
