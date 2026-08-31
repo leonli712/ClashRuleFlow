@@ -28,27 +28,28 @@ dns:
     fake-ip-filter: ['*.market.xiaomi.com', '*.n.n.srv.nintendo.net', +.stun.playstation.net, 'xbox.*.*.microsoft.com', '*.msftncsi.com', '*.msftconnecttest.com', WORKGROUP, '*.lan', 'stun.*.*.*', 'stun.*.*', time.windows.com, time.nist.gov, time.apple.com, time.asia.apple.com, '*.ntp.org.cn', '*.openwrt.pool.ntp.org', time1.cloud.tencent.com, time.ustc.edu.cn, pool.ntp.org, ntp.ubuntu.com, '*.*.xboxlive.com', speedtest.cros.wr.pvp.net, stun.services.mozilla1.com, ntp.nasa.gov, captive.apple.com]
     nameserver: ['https://223.6.6.6/dns-query', 'https://120.53.53.53/dns-query', 'tls://223.5.5.5:853']
 """
+import os
 
-# ========== 代理节点配置 ==========
+# ========== 代理节点配置（全部从环境变量读取，不硬编码） ==========
 INSIDE_PROXY = {
     "name": "旁路由",
     "type": "socks5",
-    "server": "192.168.50.2",
-    "port": 7891,
+    "server": os.environ["INSIDE_SERVER"],
+    "port": int(os.environ["INSIDE_PORT"]),
     "udp": True,
-    "username": "leon",
-    "password": "sfox0712",
+    "username": os.environ["PROXY_USERNAME"],
+    "password": os.environ["PROXY_PASSWORD"],
     "skip-cert-verify": True,
 }
 
 OUTSIDE_PROXY = {
     "name": "旁路由",
     "type": "socks5",
-    "server": "www.leoneva.fun",
-    "port": 55012,
+    "server": os.environ["OUTSIDE_SERVER"],
+    "port": int(os.environ["OUTSIDE_PORT"]),
     "udp": True,
-    "username": "leon",
-    "password": "sfox0712",
+    "username": os.environ["PROXY_USERNAME"],
+    "password": os.environ["PROXY_PASSWORD"],
     "skip-cert-verify": True,
 }
 
