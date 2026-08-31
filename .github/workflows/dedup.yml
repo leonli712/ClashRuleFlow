@@ -1,0 +1,26 @@
+name: 规则自动去重
+
+on:
+  push:
+    paths:
+      - '*.ini'
+      - 'tools/dedup_by_group.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  dedup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 运行去重脚本
+        run: python3 tools/dedup_by_group.py Router.ini rules_merged
+      - name: 提交结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rules_merged/
+          git commit -m "auto: 规则去重合并" || echo "无变化，跳过提交"
+          git push
