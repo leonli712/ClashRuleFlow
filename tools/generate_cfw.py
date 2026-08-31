@@ -124,7 +124,8 @@ def build_rules(deduped, special_rules):
     rules = []
     for rt, v, ex, g in deduped:
         if ex:
-            rules.append(f"{rt},{v},{ex},{g}")
+            # 附加参数（如 no-resolve）放在策略组后面
+            rules.append(f"{rt},{v},{g},{ex}")
         else:
             rules.append(f"{rt},{v},{g}")
     for g, u in special_rules:
