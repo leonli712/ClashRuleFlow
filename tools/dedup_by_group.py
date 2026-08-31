@@ -1,24 +1,32 @@
 #!/usr/bin/env python3
-"""按策略组合并去重 Clash 规则集：全局扫描去除重复和被覆盖的规则，再按组输出"""
+"""按策略组合并去重 Clash 规则集，并生成完整的 Router_merged.ini"""
 import re, sys, urllib.request, os
 from datetime import datetime
 from collections import OrderedDict
 
-def parse_rulesets(ini_path):
-    """返回 [(group, url_or_special), ...]，保留原始顺序"""
-    result = []
+def parse_ini(ini_path):
+    """读取 ini，分离头部（非 ruleset 部分）和 ruleset 列表"""
+    header_lines = []
+    rulesets = []
+    in_rules_section = False
+
     with open(ini_path, encoding='utf-8') as f:
         for line in f:
-            line = line.strip()
-            if line.startswith(';') or not line:
-                continue
-            m = re.match(r'^ruleset=(.+?),(.*)$', line)
-            if m:
-                group = m.group(1).strip()
-                url = m.group(2).strip()
-                if url:  # 跳过空行
-                    result.append((group, url))
-    return result
+            stripped = line.strip()
+            if stripped.startswith('ruleset='):
+                in_rules_section = True
+                m = re.match(r'^ruleset=(.+?),(.*)$', stripped)
+                if m:
+                    group = m.group(1).strip()
+                    url = m.group(2).strip()
+                    if url:
+                        rulesets.append((group, url))
+            else:
+                if not in_rules_section:
+                    header_lines.append(line.rstrip('\n'))
+                # 跳过 ruleset 段中间的空行和注释
+
+    return header_lines, rulesets
 
 def download(url):
     try:
@@ -37,15 +45,19 @@ def is_subdomain(domain, parent):
     return d == p or d.endswith('.' + p)
 
 def main():
-    ini_path = sys.argv[1] if len(sys.argv) > 1 else 'config.ini'
+    ini_path = sys.argv[1] if len(sys.argv) > 1 else 'Router.ini'
     out_dir = sys.argv[2] if len(sys.argv) > 2 else 'rules_merged'
+    merged_ini_name = sys.argv[3] if len(sys.argv) > 3 else 'Router_merged.ini'
 
-    rulesets = parse_rulesets(ini_path)
-    print(f"找到 {len(rulesets)} 个 ruleset 引用\n")
+    repo_raw_prefix = 'https://raw.githubusercontent.com/leonli712/ClashRuleFlow/main'
 
-    # 第一步：按原始顺序展开所有规则
-    all_rules = []  # (rtype, val, extra, group, source_url)
-    special_rules = []  # GEOIP/MATCH 等特殊规则，不下载
+    print(f"读取 {ini_path}...")
+    header_lines, rulesets = parse_ini(ini_path)
+    print(f"头部 {len(header_lines)} 行，规则集引用 {len(rulesets)} 个\n")
+
+    # 展开所有规则
+    all_rules = []
+    special_rules = []
 
     for group, url in rulesets:
         if url.startswith('http'):
@@ -64,17 +76,16 @@ def main():
                 count += 1
             print(f"  -> {count} 条")
         else:
-            # 特殊规则如 []GEOIP,CN / []MATCH
             special_rules.append((group, url))
             print(f"保留特殊规则 [{group}] {url}")
 
     total_raw = len(all_rules)
     print(f"\n展开后共 {total_raw} 条普通规则 + {len(special_rules)} 条特殊规则")
 
-    # 第二步：全局去重（按原始顺序，保留第一次出现）
-    seen_key = set()       # (rtype, val) —— 同类型同值，不管目标组，后面的都是死规则
-    seen_full = set()      # (rtype, val, extra) —— 精确去重
-    suffix_parents = []    # 已出现的 DOMAIN-SUFFIX
+    # 全局去重
+    seen_key = set()
+    seen_full = set()
+    suffix_parents = []
     deduped = []
 
     for rtype, val, extra, group in all_rules:
@@ -84,11 +95,9 @@ def main():
         if full in seen_full:
             continue
         if key in seen_key:
-            # 同类型同值但目标组不同 → 前面的先匹配，后面的是死规则
             seen_full.add(full)
             continue
 
-        # 域名类：检测是否被前面的后缀覆盖
         if rtype in ('DOMAIN', 'DOMAIN-SUFFIX') and val:
             if any(is_subdomain(val, p) for p in suffix_parents):
                 seen_key.add(key)
@@ -104,7 +113,7 @@ def main():
     print(f"去重后共 {len(deduped)} 条 (减少 {total_raw - len(deduped)} 条, "
           f"精简 {((total_raw-len(deduped))/total_raw*100):.1f}%)")
 
-    # 第三步：按策略组重新分组
+    # 按组输出 list 文件
     os.makedirs(out_dir, exist_ok=True)
     groups = OrderedDict()
     for rtype, val, extra, group in deduped:
@@ -113,7 +122,6 @@ def main():
     print(f"\n按策略组输出:")
     group_files = {}
     for group, rules in groups.items():
-        # 文件名：用组名的安全形式
         safe_name = re.sub(r'[^\w]', '_', group)
         fname = f"{safe_name}.list"
         fpath = os.path.join(out_dir, fname)
@@ -128,25 +136,34 @@ def main():
         group_files[group] = fname
         print(f"  {group}: {len(rules)} 条 -> {fname}")
 
-    # 第四步：生成新的 ini 规则段
-    print(f"\n{'='*60}")
-    print("生成的 ruleset 替换片段（用以下内容替换原 ini 中的规则集配置段）:")
-    print('='*60)
-    for group, fname in group_files.items():
-        # 这里用你的 GitHub raw 地址前缀，需要替换成你自己的
-        print(f'ruleset={group},https://raw.githubusercontent.com/leonli712/ClashRuleFlow/main/rules_merged/{fname}')
-    # 特殊规则放在最后
-    for group, url in special_rules:
-        print(f'ruleset={group},{url}')
+    # 生成完整的 Router_merged.ini
+    print(f"\n生成 {merged_ini_name}...")
+    with open(merged_ini_name, 'w', encoding='utf-8') as f:
+        # 写入头部
+        for line in header_lines:
+            f.write(line + '\n')
 
-    # 同时保存到文件
+        # 写入规则集段标题
+        f.write('\n; ==========【规则集配置（自动去重合并）】 ==========\n')
+
+        # 写入合并后的 ruleset 引用
+        for group, fname in group_files.items():
+            f.write(f'ruleset={group},{repo_raw_prefix}/{out_dir}/{fname}\n')
+
+        # 写入特殊规则
+        for group, url in special_rules:
+            f.write(f'ruleset={group},{url}\n')
+
+    print(f"已生成 {merged_ini_name}")
+
+    # 同时保存 snippet 供参考
     snippet_path = os.path.join(out_dir, 'ruleset_snippet.ini')
     with open(snippet_path, 'w', encoding='utf-8') as f:
         for group, fname in group_files.items():
-            f.write(f'ruleset={group},https://raw.githubusercontent.com/leonli712/ClashRuleFlow/main/rules_merged/{fname}\n')
+            f.write(f'ruleset={group},{repo_raw_prefix}/{out_dir}/{fname}\n')
         for group, url in special_rules:
             f.write(f'ruleset={group},{url}\n')
-    print(f"\n片段已保存到 {snippet_path}")
+    print(f"规则片段已保存到 {snippet_path}")
 
 if __name__ == '__main__':
     main()
