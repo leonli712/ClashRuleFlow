@@ -1,4 +1,4 @@
-# 海外媒体 | 合并去重后 344 条
+# 海外媒体 | 合并去重后 339 条
 # 来源: Router.ini
 
 DOMAIN-SUFFIX,edgedatg.com
@@ -178,7 +178,6 @@ DOMAIN-SUFFIX,yb.uncn.jp
 DOMAIN,itvpnpmobile-a.akamaihd.net
 DOMAIN-SUFFIX,itv.com
 DOMAIN-SUFFIX,itvstatic.com
-DOMAIN-SUFFIX,iwara.tv
 DOMAIN-KEYWORD,jooxweb-api
 DOMAIN-SUFFIX,joox.com
 DOMAIN-KEYWORD,japonx
@@ -278,10 +277,6 @@ DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,pbs.org
 DOMAIN-SUFFIX,pandora.com
-DOMAIN-SUFFIX,phncdn.com
-DOMAIN-SUFFIX,phprcdn.com
-DOMAIN-SUFFIX,pornhub.com
-DOMAIN-SUFFIX,pornhubpremium.com
 DOMAIN-SUFFIX,qobuz.com
 DOMAIN-SUFFIX,p-cdn.us
 DOMAIN-SUFFIX,sndcdn.com

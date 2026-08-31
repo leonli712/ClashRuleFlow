@@ -1,4 +1,4 @@
-# 海外流量 | 合并去重后 328 条
+# 海外流量 | 合并去重后 313 条
 # 来源: Router.ini
 
 DOMAIN-SUFFIX,1password.com
@@ -40,7 +40,6 @@ DOMAIN-KEYWORD,fbcdn
 DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,instagram
-DOMAIN-KEYWORD,porn
 DOMAIN-KEYWORD,sci-hub
 DOMAIN-KEYWORD,spotify
 DOMAIN-KEYWORD,telegram
@@ -60,7 +59,6 @@ DOMAIN-SUFFIX,awsstatic.com
 DOMAIN-SUFFIX,azureedge.net
 DOMAIN-SUFFIX,azurewebsites.net
 DOMAIN-SUFFIX,bandwagonhost.com
-DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bkrtx.com
 DOMAIN-SUFFIX,blogcdn.com
 DOMAIN-SUFFIX,blogger.com
@@ -207,8 +205,6 @@ DOMAIN-SUFFIX,c.gle
 DOMAIN-SUFFIX,g.co
 DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,goo.gl
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,gvt0.com
 DOMAIN-SUFFIX,gvt3.com
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
@@ -268,22 +264,11 @@ DOMAIN-SUFFIX,storage.live.com
 DOMAIN-SUFFIX,storage.msn.com
 DOMAIN-SUFFIX,microsoftpersonalcontent.com
 DOMAIN-SUFFIX,8teenxxx.com
-DOMAIN-SUFFIX,ahcdn.com
-DOMAIN-SUFFIX,bcvcdn.com
-DOMAIN-SUFFIX,bongacams.com
-DOMAIN-SUFFIX,chaturbate.com
 DOMAIN-SUFFIX,dditscdn.com
 DOMAIN-SUFFIX,livejasmin.com
 DOMAIN-SUFFIX,rdtcdn.com
-DOMAIN-SUFFIX,redtube.com
 DOMAIN-SUFFIX,sb-cd.com
-DOMAIN-SUFFIX,spankbang.com
 DOMAIN-SUFFIX,t66y.com
-DOMAIN-SUFFIX,xhamster.com
-DOMAIN-SUFFIX,xnxx-cdn.com
-DOMAIN-SUFFIX,xnxx.com
-DOMAIN-SUFFIX,xvideos-cdn.com
-DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,ypncdn.com
 DOMAIN-SUFFIX,pixiv.net
 DOMAIN-SUFFIX,pximg.net

@@ -1,4 +1,4 @@
-# 全球拦截 | 合并去重后 1564 条
+# 全球拦截 | 合并去重后 1562 条
 # 来源: Router.ini
 
 DOMAIN-KEYWORD,admarvel
@@ -987,7 +987,6 @@ DOMAIN-SUFFIX,ads.google.com
 DOMAIN-SUFFIX,adservice.google.com
 DOMAIN-SUFFIX,afd.l.google.com
 DOMAIN-SUFFIX,badad.googleplex.com
-DOMAIN-SUFFIX,csi.gstatic.com
 DOMAIN-SUFFIX,doubleclick.com
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,google-analytics.com
@@ -1510,7 +1509,6 @@ DOMAIN-SUFFIX,analytics.ganji.com
 DOMAIN-SUFFIX,api-deal.kechenggezi.com
 DOMAIN-SUFFIX,api-z.weidian.com
 DOMAIN-SUFFIX,app-monitor.ele.me
-DOMAIN-SUFFIX,bat.bing.com
 DOMAIN-SUFFIX,bd1.52che.com
 DOMAIN-SUFFIX,bd2.52che.com
 DOMAIN-SUFFIX,bdj.tianya.cn
