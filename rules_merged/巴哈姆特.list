@@ -1,0 +1,10 @@
+# 巴哈姆特 | 合并去重后 7 条
+# 来源: Router.ini
+
+DOMAIN,bahamut.akamaized.net
+DOMAIN-SUFFIX,bahamut.com.tw
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,hinet.net
+DOMAIN-SUFFIX,viblast.com
