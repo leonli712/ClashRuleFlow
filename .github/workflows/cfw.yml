@@ -1,0 +1,28 @@
+name: 生成CFW配置
+
+on:
+  push:
+    paths:
+      - 'PC.ini'
+      - 'tools/generate_cfw.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cfw:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 安装依赖
+        run: pip install pyyaml
+      - name: 生成Inside和Outside配置
+        run: python3 tools/generate_cfw.py PC.ini Inside.yml Outside.yml
+      - name: 提交结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Inside.yml Outside.yml
+          git commit -m "auto: 生成CFW配置" || echo "无变化，跳过提交"
+          git push
